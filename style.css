@@ -1,0 +1,637 @@
+*{
+    margin:0px;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: black;
+    max-height:100%;
+    max-width:100%;
+    overflow-x:hidden;
+}
+
+.side-bar-l{
+    width:14.5%;
+    max-height:100%;
+    background-color:rgb(0, 0, 0);
+    border-right:solid 0.1px;
+    border-color:rgb(41, 41, 41);
+    position:fixed;
+    z-index:10;
+    overflow:hidden;
+
+}
+
+.side-bar2{
+    width:90%;
+    height:939px;
+}
+.logo img{
+    height:39px;
+    display:block;
+    position:absolute;
+    left:35px;
+    top:32px;
+}
+
+.navbar ul{
+    color:white;
+    list-style-type:none;
+    position:relative;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size:18px;
+    top:90px;
+    right:80px;
+
+}
+
+.navbar li{
+    margin-bottom:-15px;
+    padding:10px;
+    padding-left: 80px;
+    margin-right:-95px;
+    margin-left:40px;
+    border-radius:8px;
+    
+}
+.navbar a{
+    text-decoration:none;
+    color:white;
+}
+
+.navbar li:hover{
+    transition:ease-out .2s;
+    background-color:#1A1A1A;
+    
+}
+
+.icon{
+    width:24px;
+    height:24px, 100%;
+    position:relative;
+    left:75px;
+    top:40px;
+    z-index:2;
+    user-select:none;
+    pointer-events: none;
+}
+
+.icon:hover{
+    transform:scale(2px);
+}
+.menu{
+    height:60px;
+    width:243px;
+    padding-left:80px;
+    position:absolute;
+    left:10px;
+    top:90%;
+}
+.menu-img{
+    max-width: 100%;
+    width:32px;
+    height:32px;
+    position:relative;
+    right:60px;
+    z-index:1;
+    pointer-events: none;
+    user-select: none;
+}
+
+.menu a{
+    text-decoration:none;
+    color:white;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size:16px;
+
+}
+
+.menu p{
+    position:relative;
+    bottom:70%;
+    right:80px;
+    padding:10px;
+    padding-right:150px;
+    padding-left:60px;
+    margin-right:120px;
+    border-radius:8px;
+}
+
+.menu p:hover{
+    transition:ease-out .15s;
+    background-color:#1A1A1A;
+}
+
+
+.side-bar-r{
+    width:360px;
+    height:830px;
+    background-color:rgb(0, 0, 0);
+    z-index:1;
+    position:relative;
+    left:66.5%;
+    bottom:820px;
+
+}
+
+.profile3{
+    position:relative;
+    display:inline-block;
+    overflow: hidden;
+    width: 50px;
+    height:50px;
+    right:10%;
+    top:2%;
+}
+
+.profile-side{
+    position:relative;
+    height:35%;
+    width:100%;
+
+}
+
+.profile-side p{
+    overflow: hidden;
+    position:relative;
+    display:inline-block;
+}
+
+.profile-sub{
+    overflow: hidden;
+    text-decoration:none;
+    display:inline-block;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size:14px;
+    color:rgb(168, 168, 168);
+    position: relative;
+    bottom: 0%;
+    right:5%;
+
+
+}
+
+.switch{
+    overflow: hidden;
+    color:rgb(0, 149, 246);
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size:12px;
+    text-decoration: none;
+    position:relative;
+    left:40%;
+    bottom:5%;
+}
+
+.side-bar-r .profile2{
+    overflow: hidden;
+    color:white;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size:14px;
+    display: inline-flex;
+    position:relative;
+    left:25.5%;
+    bottom:7.5%;
+}
+
+.stories{
+    width:38%;
+    height:110px;
+    z-index:1;
+    position:relative;
+    left:27%;
+    top:45px;
+    display:flex;
+    overflow:auto;
+    background-color: black;
+}
+
+
+.stories::-webkit-scrollbar{
+    background-color: rgb(46, 46, 46);
+    scroll-behavior: smooth;
+
+}
+.stories img{
+    width:66px;
+    height:66px;
+    margin-right:-24px;
+}
+
+.stories img:hover{
+    cursor:pointer;
+}
+
+.story{
+    display:flex;
+    flex: 33.33%;
+}
+
+.story-user p{
+    color:white;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size:14px;
+    position:relative;
+    display:inline-block;
+    top:65px;
+    right:25px;
+}
+
+.links ul{
+    position:relative;
+    left:30px;
+    bottom:185px;
+}
+
+.links-list li{
+    color:rgb(127, 127, 127);
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size:12.5px;
+    float:left;
+    margin-right:13px;
+    text-align:left;
+    position:relative;
+    right:28px;
+}
+
+.links-list li:hover{
+    text-decoration: underline;
+    text-decoration-color:rgb(127, 127, 127);
+}
+.links-list li::marker{
+    font-size:3px;
+}
+
+.links-list ul{
+    display:inline-block;
+}
+
+footer {
+    color:rgb(127, 127, 127);
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size:13px;
+    position:relative;
+    float:left;
+    bottom:20%;
+    left:30px;
+}
+
+.suggested{
+    width:320px;
+    height:300px;
+    position:relative;
+    bottom:25%;
+    left:30px;
+    z-index: 2;
+    overflow:hidden;
+}
+
+.sug-img{
+    width:36px;
+    height:36px;
+}
+
+.sug-text p{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size:16px;
+    position:relative;
+    display:inline-block;
+
+}
+
+#suggested-fu{
+    color:rgb(127, 127, 127);
+    font-weight: 600;
+    margin-bottom:15px;
+}
+#see-all{
+    color:rgb(255, 255, 255);
+    float:right;
+    font-size:13px;
+    top:5px;
+}
+
+#see-all:hover{
+    color:rgb(0, 149, 246);
+    cursor:pointer;
+}
+.sug-profile img{
+    float:left;
+}
+
+.sug-img:hover{
+    cursor:pointer;
+}
+
+.follow{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 500;
+    font-size:14px;
+    color:rgb(0, 149, 246);
+    text-align:right;
+    position:relative;
+    display:inline-block;
+    bottom:20px;
+    left:242px;
+}
+
+.follow:hover{
+    text-decoration: underline;
+    text-decoration-color:rgb(0, 149, 246);
+    cursor:pointer;
+}
+
+.user{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color:white;
+    display:inline-block;
+    font-weight: 400;
+    font-size: 14px;
+    position:relative;
+    left:10px;
+}
+
+.user:hover{
+    text-decoration: underline;
+    cursor:pointer;
+}
+
+.desc{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color:rgb(168, 168, 168);
+    font-size:12px;
+    font-weight:600;
+    position:relative;
+    left:10px;
+}
+
+.post1{
+    width: 481px;
+    height:655px;
+    background-color:rgb(0, 0, 0);
+    display:flex;
+    position:relative;
+    overflow:hidden;
+    z-index: 0;
+    left:30%;
+    top:85px;
+}
+
+.post2{
+    position:relative;
+    display:flex;
+    left:30%;
+    top:100px;
+}
+
+.post3{
+    position:relative;
+    display:flex;
+    left:30%;
+    top:720px;
+}
+
+.post-head{
+    width:481px;
+    margin-right:0px;
+    height:51px;
+    background-color: rgb(0, 0, 0);
+    position:relative;
+}
+
+.fa-solid.fa-ellipsis{
+    color:white;
+    position:relative;
+    font-size:22px;
+    left:335px;
+    bottom:20px;
+}
+
+.fa-solid.fa-ellipsis:hover{
+    cursor:pointer;
+    color:gray;
+}
+
+.post-pfp{
+    width:32px;
+    height:32px;
+    position:relative;
+    display:inline-block;
+    top:8px;
+    left:5px;
+}
+
+.post-pfp:hover{
+    cursor:pointer;
+}
+
+.post-user{
+    position:relative;
+    float:left;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color:white;
+    font-size:14px;
+    left:48px;
+    bottom:23px;
+}
+
+.post-user:hover{
+    cursor:pointer;
+    text-decoration: underline;
+}
+
+.post-date{
+    position:relative;
+    float:left;
+    bottom:23px;
+    left:16px;
+
+}
+
+.post-date ul{
+    list-style-position: inside;
+
+}
+
+.post-date li{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color:rgb(121, 121, 121);
+    font-size:14px;
+}
+
+.post-date li::marker{
+    font-size:9.8px;
+}
+
+.post-date span{
+    position:relative;
+    left:-6px;
+}
+.post{
+    width: 481px;
+    height:461px;
+    background-color: rgb(0, 0, 0);
+    border-radius:5px;
+    overflow: hidden;
+}
+
+.post img{
+    display:inline-block;
+    position:relative;
+    width:100%;
+    bottom:5px;
+    user-select: none;
+}
+
+.interact{
+    width:481px;
+    height:43px;
+    background-color: rgb(0, 0, 0);
+}
+
+.fa-regular.fa-heart{
+    color:white;
+    position:relative;
+    font-size:28px;
+    left:2px;
+    top:8px;
+}
+
+.fa-solid.fa-heart{
+    color:rgb(255, 79, 79);
+    position:relative;
+    font-size:28px;
+    left:2px;
+    top:8px;
+}
+
+.fa-regular.fa-heart:hover{
+    cursor:pointer;
+    color:gray;
+}
+
+.fa-solid.fa-heart:hover{
+    color:rgb(151, 62, 62);
+    cursor:pointer;
+}
+
+
+
+.fa-regular.fa-comment.fa-flip-horizontal{
+    color:white;
+    position:relative;
+    font-size:26px;
+    left:20px;
+    top:8px;
+}
+
+.fa-regular.fa-comment.fa-flip-horizontal:hover{
+    cursor:pointer;
+    color:gray;
+}
+
+.fa-regular.fa-paper-plane{
+    color:white;
+    position:relative;
+    font-size:26px;
+    left:38px;
+    top:8px;
+}
+
+.fa-regular.fa-paper-plane:hover{
+    cursor:pointer;
+    color:gray;
+} 
+
+.fa-regular.fa-bookmark{
+    color:white;
+    position:relative;
+    font-size:26px;
+    left:375px;
+    top:8px;
+}
+
+.fa-solid.fa-bookmark{
+    color:rgb(255, 194, 39);
+    position:relative;
+    font-size:26px;
+    left:375px;
+    top:8px;
+}
+
+.fa-regular.fa-bookmark:hover{
+    cursor:pointer;
+    color:gray;
+} 
+
+.fa-solid.fa-bookmark:hover{
+    cursor:pointer;
+    color:rgb(203, 155, 34);
+} 
+
+.likes{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color:white;
+    background-color:black;
+    font-size:15px;
+}
+
+.caption{
+    width:481;
+    height:33px;
+    background-color:rgb(0, 0, 0);
+}
+
+.caption h4{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color:white;
+    font-size:14px;
+    font-weight:500;
+}
+
+.caption h4:hover{
+    color:gray;
+    cursor:pointer;
+}
+
+.caption p{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color:white;
+    font-size:14px;
+    position:relative;
+    bottom:19px;
+    left:62px;
+}
+
+.comment{
+    width:481px;
+    height:67px;
+    background-color: rgb(0, 0, 0);
+}
+
+.comment ::placeholder{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color:rgb(172, 172, 172);
+    font-size:14px;
+    position:relative;
+}
+
+.comment::backdrop{
+    background-color:black;
+}
+
+input[type=text]{
+    width:100%;
+    background-color: black;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color:white;
+    border-style: none;
+    padding-bottom:20px;
+    border-bottom-color: rgb(39, 39, 39);
+    border-bottom-style: solid;
+    border-bottom-width: 0.5px;
+}
+
+input[type=text]:focus{
+    outline:none;
+}
+

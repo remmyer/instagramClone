@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instagram</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="images/Instagram_icon.png">
+    <link rel="stylesheet" href="fontawesome-free-6.4.2-web/css/fontawesome.min.css">
+    <script src="https://kit.fontawesome.com/27bc711d28.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    
+    
+    <section class="side-bar-l">
+
+    <div class="side-bar2">
+
+        <div class="logo">
+          <a href="instagram"> <img src="images/logo.png"> </a>
+        </div>
+
+        <nav class="navbar">
+            <ul>
+                <div class="home"><img class="icon" id="home" src="images/navbar/home.png"><a href="index.html"><li><b>Home</b></li></a></div>
+
+                <div class="search"><img class="icon" id="search" src="images/navbar/search.png"><a href="https://www.instagram.com/"><li class="dropdown-search">Search</li></a></div>
+
+                <div class="explore"><img class="icon" id="explore" src="images/navbar/explore.png"><a href="https://www.instagram.com/explore/"><li>Explore</li></a></div>
+                <div class="reels"><img class="icon" id="reels" src="images/navbar/reels.png"><a href="https://www.instagram.com/reels/"><li>Reels</li></a></div>
+                <div class="messages"><img class="icon" id="messages" src="images/navbar/messages.png"><a href="messages.html"><li>Messages</li></a></div>
+
+                <div class="notifs"><img class="icon" id="notifs" src="images/navbar/notifications.png"><a href="https://www.instagram.com/"><li class="dropdown-notif">Notifications</li></a></div>
+
+                <div class="create"><img class="icon" id="create" src="images/navbar/create.png"><a href="https://www.instagram.com/"><li>Create</li></a></div>
+                <div class="profile"><img class="icon" id="profile" src="images/profile.png"><a href="profile.html"><li>Profile</li></a></div>
+            </ul>
+        </nav>
+        <div class="menu">
+            <img class="menu-img" src="images/navbar/menu.png"><a href=""><p>More</p></a>
+        </div>
+    </section>
+    </div>
+
+    <section class="main-content">
+        <div class="stories">
+            <div class="story"><img src="images/story/profile-story.png"></div><div class="story-user"><p>user0</p></div>
+            <div class="story"><img src="images/story/profile-story.png"></div><div class="story-user"><p>user8</p></div>
+            <div class="story"><img src="images/story/profile-story.png"></div><div class="story-user"><p>user99</p></div>
+            <div class="story"><img src="images/story/profile-story.png"></div><div class="story-user"><p>user12</p></div>
+            <div class="story"><img src="images/story/profile-story.png"></div><div class="story-user"><p>user11</p></div>
+            <div class="story"><img src="images/story/profile-story.png"></div><div class="story-user"><p>user56</p></div>
+            <div class="story"><img src="images/story/profile-story.png"></div><div class="story-user"><p>user23</p></div>
+            <div class="story"><img src="images/story/profile-story.png"></div><div class="story-user"><p>user55</p></div>
+            <div class="story"><img src="images/story/profile-story.png"></div><div class="story-user"><p>user67</p></div>
+            <div class="story"><img src="images/story/profile-story.png"></div><div class="story-user"><p>user22</p></div>
+            <div class="story"><img src="images/story/profile-story.png"></div><div class="story-user"><p>user10</p></div>
+            <div class="story"><img src="images/story/profile-story.png"></div><div class="story-user"><p>user6</p></div>
+            <div class="story"><img src="images/story/profile-story.png"></div><div class="story-user"><p>user45</p></div>
+            <div class="story"><img src="images/story/profile-story.png"></div><div class="story-user"><p>user25</p></div>
+        </div>
+        <div class="posts">
+            <div class="post1">
+                <div class="post-head">  <!--profile pic, username, date of post, 3 dots for more-->
+                    <div><img class="post-pfp" src="images/profile.png"></div> 
+                    <div class="post-user">remmyer</div>
+                    <div class="post-date"><ul><li><span>1d</span></li></ul></div>
+                    <div><i class="fa-solid fa-ellipsis"></i></div>
+            
+                    <div class="post"><img src="images/post-img.jpg"></div>  <!--image of post-->
+                    <div class="interact"><i id="like1" class="fa-regular fa-heart" onclick="changeIcon1(this)"></i><i class="fa-regular fa-comment fa-flip-horizontal"></i><i class="fa-regular fa-paper-plane"></i><i class="fa-regular fa-bookmark" onclick="save1(this)"></i></div> <!--interact icons; like, comment, save icons, animation if possible, interactable-->
+                    <div id='likes1' class="likes"><span id="likeCount1">360</span> likes</div> <!-- profiles images (3) + liked by "user" and "x" others -->
+                    <div class="caption"><h4>remmyer</h4><p>Chateau Ramezay</p></div> <!--username + caption-->
+                    <div class="comment"><input type="text" placeholder="Add a comment..."></div> <!--Add a comment, input system + emoji icon at end if possible--></div>
+            </div>
+
+            <div class="post2">
+                <div class="post-head">  <!--profile pic, username, date of post, 3 dots for more-->
+                    <div><img class="post-pfp" src="images/profile.png"></div> 
+                    <div class="post-user">remmyer</div>
+                    <div class="post-date"><ul><li><span>6d</span></li></ul></div>
+                    <div><i class="fa-solid fa-ellipsis"></i></div>
+
+                    <div class="post"><img src="images/post-img2.png"></div>  <!--image of post-->
+                    <div class="interact"><i id="like2" class="fa-regular fa-heart" onclick="changeIcon2(this)"></i><i class="fa-regular fa-comment fa-flip-horizontal"></i><i class="fa-regular fa-paper-plane"></i><i class="fa-regular fa-bookmark" onclick="save2(this)"></i></div> <!--interact icons; like, comment, save icons, animation if possible, interactable-->
+                    <div id='likes2' class="likes"><span id="likeCount2">79</span> likes</div> <!-- profiles images (3) + liked by "user" and "x" others -->
+                    <div class="caption"><h4>remmyer</h4><p>Dorchester Square</p></div> <!--username + caption-->
+                    <div class="comment"><input type="text" placeholder="Add a comment..."></div> <!--Add a comment, input system + emoji icon at end if possible--></div>
+                </div>
+            </div>
+
+            <div class="post3">
+                <div class="post-head">  <!--profile pic, username, date of post, 3 dots for more-->
+                    <div><img class="post-pfp" src="images/profile.png"></div> 
+                    <div class="post-user">remmyer</div>
+                    <div class="post-date"><ul><li><span>6d</span></li></ul></div>
+                    <div><i class="fa-solid fa-ellipsis"></i></div>
+
+                    <div class="post"><img src="images/post-img3.png"></div>  <!--image of post-->
+                    <div class="interact"><i id="like3" class="fa-regular fa-heart" onclick="changeIcon3(this)"></i><i class="fa-regular fa-comment fa-flip-horizontal"></i><i class="fa-regular fa-paper-plane"></i><i class="fa-regular fa-bookmark" onclick="save3(this)"></i></div> <!--interact icons; like, comment, save icons, animation if possible, interactable-->
+                    <div id='likes3' class="likes"><span id="likeCount3">499</span> likes</div> <!-- profiles images (3) + liked by "user" and "x" others -->
+                    <div class="caption"><h4>remmyer</h4><p>Random alley near Mont Royal</p></div> <!--username + caption-->
+                    <div class="comment"><input type="text" placeholder="Add a comment..."></div> <!--Add a comment, input system + emoji icon at end if possible--></div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="side-bar-r">
+        <div class="profile-side">
+            <a href="instagram.com"><p class="profile2">remmyer</p></a>
+            <a href="instagram.com"><img class="profile3" src="images/profile.png"></a><a class="profile-sub" href="instagram.com"><p>mohima</p></a>
+            <a class ="switch" href="instagram.com"><p>Switch</p></a>
+        </div>
+
+        <div class="suggested">
+
+            <div class="sug-text">
+                <p id="suggested-fu">Suggested for you</p>
+                <p id="see-all">See All</p>
+            </div>
+            
+            <div class="sug-profile">
+                <div class="acc">
+                    <img class="sug-img" src="images/profile.png">
+                    <h4 class="user">user_1</h4>
+                    <p class="desc">New to Instagram</p>
+                    <h4 id="follow" class="follow">Follow</h4>
+                </div>
+                <div class="acc">
+                    <img class="sug-img" src="images/profile.png">
+                    <h4 class="user">user_2</h4>
+                    <p class="desc">Followed by user0</p>
+                    <h4 class="follow">Follow</h4>
+                </div>
+                <div class="acc">
+                    <img class="sug-img" src="images/profile.png">
+                    <h4 class="user">user_3</h4>
+                    <p class="desc">Followed by user8 + 1 more</p>
+                    <h4 class="follow">Follow</h4>
+                </div>
+                <div class="acc">
+                    <img class="sug-img" src="images/profile.png">
+                    <h4 class="user">user_4</h4>
+                    <p class="desc">Followed by user12 + 1 more</p>
+                    <h4 class="follow">Follow</h4>
+                </div>
+                <div class="acc">
+                    <img class="sug-img" src="images/profile.png">
+                    <h4 class="user">user_5</h4>
+                    <p class="desc">Followed by user14 + 1 more</p>
+                    <h4 class="follow">Follow</h4>
+                </div>
+            </div>
+        </div>
+
+        <div class="links">
+
+            <ul class="links-list">
+           <a href="https://about.instagram.com/" target="_blank"><li>About</li></a>
+           <a href="https://help.instagram.com/" target="_blank"><li>Help</li></a>
+           <a href="https://about.instagram.com/blog/" target="_blank"><li>Press</li> </a>
+           <a href="https://developers.facebook.com/docs/instagram" target="_blank"><li>API</li></a>
+           <a href="https://developers.facebook.com/docs/instagram" target="_blank"><li>Jobs</li> </a>
+           <a href="https://www.instagram.com/legal/privacy/" target="_blank"><li>Privacy</li> </a>
+           <a href="https://www.instagram.com/legal/terms/" target="_blank"><li>Terms</li> </a>
+           <a href="https://www.instagram.com/explore/locations/" target="_blank"><li>Locations</li> </a>
+           <li>Language</li> 
+            </ul>
+        </div>
+        <footer class="footer">© 2023 INSTAGRAM CLONE FROM MOHIMA</footer>
+    </section>
+
+
+<script src="index.js"></script>
+</body>
+</html>
