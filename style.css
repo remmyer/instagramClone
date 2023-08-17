@@ -635,3 +635,543 @@ input[type=text]:focus{
     outline:none;
 }
 
+/* PROFILE PAGE */
+
+.profile-container{
+    width:1200px;
+    height:920px;
+    position:absolute;
+    left:25%;
+    display:flex;
+    justify-content: center;
+    align-items: baseline;
+}
+
+/* USER LINE*/
+
+.profile-head{
+    position:absolute;
+    left:3%;
+    width:955px;
+    height:400px;
+}
+
+.pfp-box{
+    position:absolute;
+    top:32px;
+    left:10%;
+}
+
+.pfp-box img{
+    width:160px;
+    position:relative;
+}
+
+.pfp-box img:hover{
+    cursor:pointer;
+}
+
+.user-line{    
+    display:flex;
+    width:600px;
+    position:relative;
+    top:30px;
+    left:35%;
+}
+
+.user-line h3{
+    color:white;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size:20px;
+    font-weight:400;
+    margin-right:20px;
+}
+
+.user-line h3:hover{
+    cursor:pointer;
+}
+
+.user-line button{
+    display:flex;
+    position:relative;
+    background-color:rgb(54, 54, 54);
+    font-size:14px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight:500;
+    color:white;
+    border-style: none;
+    padding-top:6px;
+    padding-bottom:6px;
+    padding-left:15px;
+    padding-right:15px;
+    border-radius:8px;
+    margin-right:8px;
+}
+
+.user-line button:hover{
+    background-color:rgb(38, 38, 38);
+    cursor:pointer;
+    transition:ease-out 0.15s;
+}
+
+.fa-solid.fa-gear{
+    position:relative;
+    margin-left:5px;
+    top:4px;
+    color:white;
+    font-size:25px;
+}
+
+.fa-solid.fa-gear:hover{
+    color:rgb(190, 190, 190);
+    cursor:pointer;
+    transition:ease-out 0.15s;
+}
+
+/* FOLLOW COUNT */
+
+.follow-count{
+    width:600px;
+    display:flex;
+    position:relative;
+    top:50px;
+    left:35.1%;
+}
+
+.follow-count{
+    color:white;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.follow-count div{
+    margin-right:42px;
+}
+
+.follow-count span{
+    font-weight:500;
+}
+
+.follow-count span:hover{
+    cursor:pointer;
+}
+
+/* BIO */
+
+.bio{
+    width:200px;
+    color:white;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    position:relative;
+    left:35%;
+    top:70px;
+    font-size:14px;
+}
+
+.bio h4{
+    font-weight:500;
+    margin-bottom:5px;
+}
+
+/* STORY HIGHLIGHTS */
+
+.story-highlights{
+    width:680px;
+    display:flex;
+    position:relative;
+    top:140px;
+    left:7%;
+}
+
+.story-highlight{
+    border:1px solid rgb(49, 49, 49);
+    background-color:black;
+    width:90px;
+    height:90px;
+    margin-right:45px;
+    border-radius:50px;
+}
+
+.story-add{
+    border:3px solid black;
+    background-color:rgb(18, 18, 18);
+    outline:1px solid rgb(49, 49, 49);
+    width:88px;
+    height:88px;
+    margin-right:40px;
+    border-radius:50px;
+}
+
+.fa-solid.fa-plus{
+    top:22px;
+    display:flex;
+    justify-content: center;
+    color:gray;
+    position:relative;
+    font-size:40px;
+}
+
+.fa-solid.fa-plus:hover{
+    cursor:pointer;
+}
+
+.story-add p{
+    color:white;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size:14px;
+    font-weight:500;
+    position:relative;
+    top:52px;
+    left:30%;
+}
+
+/* PROFILE CONTENT */
+
+/*PROFILE NAVBAR*/
+
+.profile-content{
+    border-top:1px solid rgb(38, 38, 38);
+    width:955px;
+    position:absolute;
+    display:flex;
+    left:3%;
+    top:400px;
+
+}
+
+.profile-navbar{
+    display:flex;
+    width:955px;
+    position:relative;
+    justify-content: center;
+}
+
+.btn-active button{ 
+    padding:12px;
+    color:rgb(255, 255, 255);
+    background:none;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight:500;
+    border:none;
+    border-top:1px solid white;
+    letter-spacing: 1px;
+    margin-right:40px;
+}
+
+.btn-active button:hover{
+    cursor:pointer;
+}
+
+.btn-inactive button{
+    padding:12px;
+    color:rgb(177, 177, 177);
+    background:none;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight:500;
+    border:none;
+    letter-spacing: 1px;
+    margin-right:40px;
+}
+
+.btn-inactive button:hover{
+    cursor:pointer;
+}
+
+/* POSTS */
+
+.profile-posts{
+    width:955px;
+    position:absolute;
+    display:flex;
+    top:45px;
+}
+
+.profile-posts div{
+    display:flex;
+    position:relative;
+    border:2px solid rgb(0, 0, 0);
+    width:318px;
+    height:318px;
+    overflow:hidden;
+}
+
+.profile-posts img{
+  width:500px;
+}
+
+.profile-posts img:hover{
+    cursor:pointer;
+    transition:ease-out 0.1s;
+    opacity:70%
+}
+
+.profile-posts img:active{
+    transition:ease-out 0.1s;
+    opacity: 50%;
+}
+
+/* FOOTER */
+
+.profile-footer{
+    display:flex;
+    position:absolute;
+    bottom:100px;
+    left:3%;
+    width:955px;
+}
+
+.footer-1 ul{
+    width:955px;
+    font-size:12px;
+    list-style-type: none;
+    display:flex;
+    position:relative;
+}
+
+.footer-1 li{
+    margin-right:15px;
+}
+
+.ex-footer{
+    display:flex;
+    position:relative;
+    right:68%;
+    top:30px;
+}
+
+.ex-footer ul{
+    width:350px;
+    list-style-type:none;
+    display:flex;
+}
+
+.ex-footer li{
+    font-size:12px;
+    margin-right:20px;
+}
+
+/* INBOX PAGE*/
+
+/* MINIMIZED NAVBAR */
+
+.side-bar-l-min{
+    width:4.35%;
+    max-height:100%;
+    background-color:rgb(0, 0, 0);
+    border-right:solid 0.1px;
+    border-color:rgb(41, 41, 41);
+    position:fixed;
+    z-index:10;
+    overflow:hidden;
+
+}
+
+.side-bar-min{
+    width:50%;
+    height:939px;
+}
+
+.logo-min img{
+    height:22px;
+    display:block;
+    position:absolute;
+    left:26px;
+    top:35px;
+}
+
+.logo-min img:hover{
+    opacity:50%;
+    transition:ease-out 0.12s;
+}
+
+.navbar-min ul{
+    color:white;
+    list-style-type:none;
+    position:relative;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size:18px;
+    top:85px;
+    right:90px;
+
+}
+
+.navbar-min img{
+    margin-bottom:25px;
+}
+
+.navbar-min img:hover{
+    opacity:50%;
+    transition:ease-out 0.12s;
+}
+.navbar-min a{
+    text-decoration:none;
+    color:white;
+}
+
+.fa-brands.fa-facebook-messenger{
+    position:relative;
+    left:74px;
+    top:38px;
+    color:white;
+    font-size:26px;
+    margin-bottom:25px;
+}
+
+.fa-brands.fa-facebook-messenger:hover{
+   cursor:pointer;
+   opacity:50%;
+   transition:ease-out 0.12s;
+}
+
+.menu-min{
+    height:60px;
+    width:243px;
+    padding-left:80px;
+    position:absolute;
+    left:10px;
+    top:90%;
+}
+
+.menu-min-img{
+    max-width: 100%;
+    width:32px;
+    height:32px;
+    position:relative;
+    right:72px;
+    z-index:1;
+}
+
+.menu-min-img:hover{
+    cursor:pointer;
+    opacity:50%;
+    transition:ease-out 0.12s;
+}
+
+.icon-min{
+    width:24px;
+    height:24px, 100%;
+    position:relative;
+    left:75px;
+    top:40px;
+    z-index:2;
+}
+
+.icon-min:hover{
+    cursor: pointer;
+    transform:scale(2px);
+}
+
+/* MESSAGES */
+
+.inbox-bar{
+    border-right:0.5px solid rgb(38, 38, 38);
+    position:absolute;
+    width:395px;
+    left:4.5%;
+}
+
+.inbox-head{
+    position:relative;
+    display:flex;
+    padding:31px;
+}
+
+.inbox-head h3{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size:20px;
+    color:white;
+    position:relative;
+    top:7px;
+    right:10px;
+    margin-right:10px;
+}
+
+.fa-solid.fa-angle-down{
+    position:relative;
+    top:13px;
+    right:12px;
+    font-size:13px;
+    color:rgb(156, 156, 156);
+    margin-right:200px;
+}
+
+.new-msg{
+    top:7px;
+    position:relative;
+}
+
+.fa-regular.fa-pen-to-square{
+    position:relative;
+    color:white;
+    font-size:23px;
+}
+
+.inbox-title{
+    position:relative;
+    display:flex;
+    margin-bottom:15px;
+}
+
+.inbox-title h3{
+    color:white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-right:220px;
+    margin-left:20px;
+    font-size:16px;
+}
+
+.inbox-title h4{
+    color:rgb(168, 168, 168);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-right:20px;
+    font-weight:500;
+    font-size:14px;
+}
+
+/* MESSAGES/INBOX */
+
+.inbox-messages{
+    height:87.4vh;
+    overflow:auto;
+}
+
+.inbox-row:hover{
+    background-color:rgb(18, 18, 18);
+    cursor:pointer;
+}
+
+.inbox-row{
+    padding-top:7px;
+    padding-bottom:5px;
+}
+
+.inbox-messages img{
+    border-radius: 50px;
+    width:56px;
+    margin-left:18px;
+}
+
+.inbox-row h3{
+    color:white;
+    font-weight:400;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size:14px;
+    position:relative;
+    margin-left:12px;
+    margin-bottom:12px;
+    top:10px;
+}
+
+.inbox-messages p{
+    position:relative;
+    color:rgb(191, 191, 191);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size:13px;
+    margin-left:12px;
+    padding:0px;
+}
+
+.inbox-sent{
+    position:relative;
+    display:inline-block;
+    bottom:20px;
+}

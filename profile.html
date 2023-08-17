@@ -6,7 +6,12 @@
     <title>My profile</title>
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="images/Instagram_icon.png">
+    <link rel="stylesheet" href="fontawesome-free-6.4.2-web/css/fontawesome.min.css">
+    <script src="https://kit.fontawesome.com/27bc711d28.js" crossorigin="anonymous"></script>
 </head>
+
+<!--TIME TOOK: 2h 26min 15s-->
+
 <body>
      
     <section class="side-bar-l">
@@ -19,7 +24,7 @@
     
             <nav class="navbar">
                 <ul>
-                    <div class="home"><img class="icon" id="home" src="images/navbar/home.png"><a href="index.html"><li>Home</li></a></div>
+                    <div class="home"><img class="icon" id="home" src="images/navbar/home-unselected.png"><a href="index.html"><li>Home</li></a></div>
     
                     <div class="search"><img class="icon" id="search" src="images/navbar/search.png"><a href="https://www.instagram.com/"><li class="dropdown-search">Search</li></a></div>
     
@@ -39,9 +44,78 @@
         </section>
         </div>
 
+        <section class="profile-container">
+            <section class="profile-head">
+                <div class="pfp-box"> <!--pfp, no story ring-->
+                    <img src="images/profile.png">
+                </div>
+                <div class="user-line">
+                    <div><h3>remmyer</h3></div> <!--username-->
+                    <div><button>Edit profile</button></div> <!--button1, edit profile-->
+                    <div><button>View Archive</button></div> <!--button2, view archive-->
+                    <div><i class="fa-solid fa-gear"></i></div> <!--settings icon-->
+                </div>
+                <div class="follow-count">
+                    <div><span>3</span> posts</div> <!--posts-->
+                    <div><span>1,200</span> followers</div> <!--followers-->
+                    <div><span>90</span> following</div> <!--following-->
+                </div>
+                <div class="bio">
+                    <div><h4>mohima</h3></div> <!--user-->
+                    <div><p>سبحان الله</p></div> <!--bio-->
+                </div>
+                <div class="story-highlights">
+                    <div class="story-highlight"></div> <!--3 highlights + add highlight button-->
+                    <div class="story-highlight"></div>
+                    <div class="story-highlight"></div>
+                    <div class="story-highlight"></div>
+                    <div class="story-add"><i class="fa-solid fa-plus"></i><p>New</p></div>
+                </div>
 
+            </section>
+    
+            <section class="profile-content">
+                <div class="profile-navbar">
+                    <div class="btn-active"><button>POSTS</button></div> <!--Posts + icon + border-top style : white when active-->
+                    <div class="btn-inactive"><button>SAVED</button></div> <!--Saved + icon + border-top style : white when active-->
+                    <div class="btn-inactive"><button>TAGGED</button></div> <!--Tagged + icon + border-top style : white when active-->
+                </div>
+                <div class="profile-posts">
+                    <div><img src="images/post-img.jpg"></div> <!--3 posts, onhover: black opacity 75% + show likes and comment number-->
+                    <div><img src="images/post-img2.png"></div>
+                    <div><img src="images/post-img3.png"></div>
+                </div>
+            </section>
+    
+            <footer class="profile-footer">
+              <div class="footer-1">  <!--external links, 14-->
+                <ul>
+                    <li>Meta</li>
+                    <li>About</li>
+                    <li>Blog</li>
+                    <li>Jobs</li>
+                    <li>Help</li>
+                    <li>API</li>
+                    <li>Privacy</li>
+                    <li>Terms</li>
+                    <li>Top Accounts</li>
+                    <li>Locations</li>
+                    <li>Instagram Lite</li>
+                    <li>Threads</li>
+                    <li>Contact Uploading & Non-Users</li>
+                    <li>Meta Verified</li>
+                </ul>
+              </div>
 
-
+              <div class="ex-footer">  <!--Language picker, dropdown + caret-down icon; copyright tag-->
+                <ul>
+                    <li>English ▼</li>
+                    <li>© 2023 Instagram Clone from Mohima</li>
+                </ul>
+              </div>
+            </footer>
+    
+        </section>
 
 
 
