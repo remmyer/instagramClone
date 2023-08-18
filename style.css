@@ -196,7 +196,7 @@ body{
 .stories{
     width:38%;
     height:110px;
-    z-index:1;
+    z-index:-2;
     position:relative;
     left:27%;
     top:45px;
@@ -635,6 +635,97 @@ input[type=text]:focus{
     outline:none;
 }
 
+/* POST MODAL */
+
+.modal{
+    display:none;
+    position:fixed;
+    top:0;
+    bottom:0;
+    right:0;
+    left:0;
+}
+
+.modal-content.active{
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.modal-content{
+    left:50%;
+    top:50%;
+    transform: translate(-50%, -50%) scale(0);
+    transition:200ms ease-in-out;
+    z-index:1000;
+
+    text-align: center;
+    border-radius:10px;
+    background-color:rgb(38, 38, 38);
+    position:fixed;
+    width:390px;
+    height:350px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color:white;
+    font-size:14px;
+    font-weight:400;
+}
+
+.modal-option{
+    border-bottom:0.01px solid rgb(70, 70, 70);
+    padding:15px;
+}
+
+.modal-option:hover{
+    cursor:pointer;
+}
+
+.modal-option:active{
+    background-color:rgba(0, 0, 0, 0.1);
+}
+
+.modal-cancel{
+    padding:15px;
+}
+
+.modal-cancel:hover{
+    cursor:pointer;
+}
+
+.modal-cancel:active{
+    background-color:rgba(0, 0, 0, 0.1);
+}
+
+.modal-cancel button{
+    background:none;
+    border:none;;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color:white;
+    font-size:14px;
+    font-weight:400;
+}
+
+.modal-content span{
+    color:red;
+    font-weight:500;
+}
+
+#modal-overlay{
+    background-color:rgba(0, 0, 0, 0.50);
+    transition:200ms ease-in-out;
+    position:fixed;
+    opacity:0;
+    pointer-events: none;
+    top:0;
+    bottom:0;
+    right:0;
+    left:0;
+    z-index:999;
+}
+
+#modal-overlay.active{
+    opacity:1;
+    pointer-events: all;
+}
+
 /* PROFILE PAGE */
 
 .profile-container{
@@ -789,6 +880,10 @@ input[type=text]:focus{
     height:90px;
     margin-right:45px;
     border-radius:50px;
+}
+
+.story-highlight:hover{
+    cursor:pointer;
 }
 
 .story-add{
@@ -1067,6 +1162,7 @@ input[type=text]:focus{
     position:absolute;
     width:395px;
     left:4.5%;
+    background-color:black;
 }
 
 .inbox-head{
@@ -1132,6 +1228,7 @@ input[type=text]:focus{
 .inbox-messages{
     height:87.4vh;
     overflow:auto;
+    scrollbar-color: dark;
 }
 
 .inbox-row:hover{
@@ -1170,8 +1267,78 @@ input[type=text]:focus{
     padding:0px;
 }
 
+.inbox-messages span{
+    font-weight:600;
+    color:white;
+}
+
 .inbox-sent{
     position:relative;
     display:inline-block;
     bottom:20px;
+}
+
+.fa-solid.fa-circle{
+    color:rgb(0, 149, 246);
+    font-size:8px;
+    position:relative;
+    display:flex;
+    float:right;
+    top:25px;
+    right:15px;
+}
+
+/* NO CHAT */
+
+.no-chat{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    position:absolute;
+    height:95vh;
+    width:68vw;
+    left:30.5vw;
+    z-index:-1;
+    text-align: center;
+}
+
+.no-chat img{
+    pointer-events: none;
+    user-select: none;
+}
+
+.no-chat button{
+    background-color:rgb(0, 149, 246);
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color:white;
+    border:none;
+    font-weight:500;
+    font-size:14px;
+    padding: 6px;
+    padding-right:15px;
+    padding-left:15px;
+    border-radius:8px;
+    user-select:none;
+}
+
+.no-chat h3{
+    color:white;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight:400;
+    font-size:20px;
+    margin-bottom:5px;
+}
+
+.no-chat p{
+    color:rgb(169, 169, 169);
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight:400;
+    font-size:14px;
+    margin-bottom:20px;
+}
+
+.no-chat button:hover{
+    cursor:pointer;
+    background-color:rgb(24, 119, 242);
+    transition:ease-out 0.1s;
 }

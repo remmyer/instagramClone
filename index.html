@@ -65,7 +65,7 @@
                     <div><img class="post-pfp" src="images/profile.png"></div> 
                     <div class="post-user">remmyer</div>
                     <div class="post-date"><ul><li><span>1d</span></li></ul></div>
-                    <div><i class="fa-solid fa-ellipsis"></i></div>
+                    <div id="openModal"><i class="fa-solid fa-ellipsis"></i></div>
             
                     <div class="post"><img src="images/post-img.jpg"></div>  <!--image of post-->
                     <div class="interact"><i id="like1" class="fa-regular fa-heart" onclick="changeIcon1(this)"></i><i class="fa-regular fa-comment fa-flip-horizontal"></i><i class="fa-regular fa-paper-plane"></i><i class="fa-regular fa-bookmark" onclick="save1(this)"></i></div> <!--interact icons; like, comment, save icons, animation if possible, interactable-->
@@ -105,6 +105,20 @@
             </div>
 
         </div>
+
+    </section>
+
+    <section class="modal" id="modal">
+        <div class="modal-content active">
+            <div class="modal-option"><span>Delete</span></div>
+            <div class="modal-option">Edit</div>
+            <div class="modal-option">Hide like count</div>
+            <div class="modal-option">Turn off commenting</div>
+            <div class="modal-option">Go to post</div>
+            <div class="modal-option">About this account</div>
+            <div class="modal-cancel" id="modal-cancel"><button>Cancel</button></div>
+        </div>
+        <div class="active" id="modal-overlay"></div>
     </section>
 
     <section class="side-bar-r">
@@ -174,5 +188,6 @@
 
 
 <script src="index.js"></script>
+<script src="modal.js"></script>
 </body>
 </html>
