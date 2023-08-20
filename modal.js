@@ -36,10 +36,18 @@ document.getElementById('openModal').onclick = function(){
     document.getElementById('modal').style.display = "block"
 }
 
-document.getElementById('modalCancel').onclick = function(){
+document.getElementById('openModal2').onclick = function(){
+    document.getElementById('modal').style.display = "block"
+}
+
+document.getElementById('openModal3').onclick = function(){
+    document.getElementById('modal').style.display = "block"
+}
+
+document.getElementById('modal-cancel').onclick = function(){
     document.getElementById('modal').style.display = "none"
 }
 
-document.getElementById('overlay').onclick = function(){
+document.getElementById('modal-overlay').onclick = function(){
     document.getElementById('modal').style.display = "none"
 }
