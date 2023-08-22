@@ -754,6 +754,8 @@ input[type=text]:focus{
 }
 
 .pfp-box img{
+    user-select:none;
+    border-radius:100%;
     width:160px;
     position:relative;
 }
@@ -990,7 +992,10 @@ input[type=text]:focus{
 }
 
 .profile-posts img{
-  width:500px;
+    user-select:none;
+    width:500px;
+    transition:ease-out 0.1s;
+
 }
 
 .profile-posts img:hover{
@@ -1242,12 +1247,14 @@ input[type=text]:focus{
 }
 
 .inbox-messages img{
+    user-select:none;
     border-radius: 50px;
     width:56px;
     margin-left:18px;
 }
 
 .inbox-row h3{
+    user-select:none;
     color:white;
     font-weight:400;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -1259,6 +1266,7 @@ input[type=text]:focus{
 }
 
 .inbox-messages p{
+    user-select:none;
     position:relative;
     color:rgb(191, 191, 191);
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -1341,4 +1349,107 @@ input[type=text]:focus{
     cursor:pointer;
     background-color:rgb(24, 119, 242);
     transition:ease-out 0.1s;
+}
+
+
+/*EXPLORE PAGE*/
+
+.posts-grid{
+    top:2%;
+    width:85%;
+    left:14.5%;
+    position:absolute;
+}
+
+.explore-tags{
+    display:flex;
+    position:relative;
+    justify-content:start;
+    width:100%;
+    left:12.2%;
+}
+
+.explore-tags div{
+    background-color:rgb(54, 54, 54);
+    border-radius:8px;
+    padding-left:10px;
+    padding-right:10px;
+    padding-top:8px;
+    padding-bottom:8px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color:white;
+    margin-right:10px;
+    font-weight:500;
+    font-size:14px;
+}
+
+.explore-tags div:hover{
+    background-color:rgb(41, 41, 41);
+    cursor:pointer;
+
+}
+
+.explore-posts{
+    position:relative;
+    margin-top:20px;
+    margin-bottom:20px;
+    left:10%;
+    width:80%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap:wrap;
+}
+
+.explore-posts div{
+    position:relative;
+    width:31%;
+    height: 340px;
+    margin-bottom:5px;
+    margin-right:5px;
+    overflow:hidden;
+}
+
+.explore-posts img{
+    width:350px;
+    user-select:none;
+    opacity:100%;
+    transition:ease-out 150ms;
+
+}
+
+.explore-posts img:hover{
+    opacity:70%;
+    transition:ease-in 150ms;
+    cursor:pointer;
+}
+
+.explore-posts img:active{
+    transition:ease-in 80ms;
+    opacity: 50%;
+}
+
+#wall{
+    position:relative;
+    bottom:70%;
+}
+
+#jacket2{
+    position:relative;
+    bottom:17%;
+}
+
+#sweater{
+    position:relative;
+    bottom:15%;
+}
+
+#snorlax{
+    position:relative;
+    bottom:10%;
+}
+
+#star{
+    position:relative;
+    bottom:10%;
 }
