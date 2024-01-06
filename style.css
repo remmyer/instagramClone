@@ -1394,24 +1394,25 @@ input[type=text]:focus{
     margin-top:20px;
     margin-bottom:20px;
     left:10%;
-    width:80%;
+    width:72%;
     display:flex;
     justify-content: center;
     align-items: center;
     flex-wrap:wrap;
 }
 
+
 .explore-posts div{
     position:relative;
-    width:31%;
-    height: 340px;
+    width:300px;
+    height: 300px;
     margin-bottom:5px;
     margin-right:5px;
     overflow:hidden;
 }
 
 .explore-posts img{
-    width:350px;
+    width:100%;
     user-select:none;
     opacity:100%;
     transition:ease-out 150ms;
@@ -1453,3 +1454,6 @@ input[type=text]:focus{
     position:relative;
     bottom:10%;
 }
+
+
+/* MEDIA QUERIES */
